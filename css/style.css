@@ -1895,7 +1895,7 @@ ul {
 
 /* line 44, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
 .main_menu .main-menu-item ul li .nav-link {
-  color: #ffffff;
+  color: #ff4800;
   font-size: 14px;
   padding: 40px 20px;
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -1913,7 +1913,7 @@ ul {
 
 /* line 55, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
 .main_menu .main-menu-item ul li .nav-link:hover {
-  color: #ff4800;
+  color: #562fc7;
 }
 
 /* line 61, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
@@ -2157,7 +2157,11 @@ ul {
   width: 100%;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
   top: 0;
-  background-color: #562fc7;
+  /* background-color: #562fc7; */
+  background: #42275a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* line 313, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
@@ -2179,6 +2183,10 @@ ul {
 /* line 325, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
 .menu_fixed .main-menu-item ul li .nav-link {
   color: #fff !important;
+}
+
+.menu_fixed .main-menu-item ul li .nav-link:hover{
+  color: #ff4800  !important;
 }
 
 /* line 330, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
@@ -2205,7 +2213,7 @@ ul {
 /* line 2, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_banner.scss */
 .banner_part {
   position: relative;
-  background-image: url(../img/banner_bg.png);
+  /* background-image: url(../img/banner_bg.png); */
   background-repeat: no-repeat;
   background-size: 65% 100%;
   background-position: left top;
