@@ -157,11 +157,18 @@ a:hover {
 }
 
 /* line 90, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_common.scss */
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   color: #182028;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
+h3,h4,h5,h6 {
+  word-spacing: 2px;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Cardo', serif;
+  font-family: 'Lora', serif;
+  font-family: 'Noto Sans', sans-serif;
+}
 /* line 94, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_common.scss */
 p {
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -2138,7 +2145,7 @@ ul {
 
 /* line 295, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
 .single_page_menu .btn_1 {
-  background-color: #fff;
+  background-color: #000;
   border: 1px solid #fff;
   color: #182028;
   font-weight: 500;
