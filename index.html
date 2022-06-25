@@ -58,7 +58,7 @@ background-size:cover;" src="img/logo.jpeg" alt="logo"></a>
   <a class="nav-link" href="#feeInformation">Visa Fee Information</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#contact">Contact</a>
+<a class="nav-link" href="#aboutus">About Us</a>
 </li>
 </ul>
 </div>
@@ -338,7 +338,7 @@ UK Standard Visitor Visa Application
                          </div>
                           
                         </p>
-                        <a href="#" class="card-link">Book Free Assessment</a>
+                        <a href="#contact"  class="card-link">Book Free Assessment</a>
                       </div>
                       <button class="btn btn-primary" onclick="stepper2.next()">Next</button>
                       </div>
@@ -505,7 +505,18 @@ UK Standard Visitor Visa Application
 </div>
 <div class="col-md-6 col-lg-6">
 <div class="learning_img">
-<img src="img/xabout_img.png.pagespeed.ic.Oqx_BtiLm0.png" alt="">
+<img src="img/founder.jpg" alt="" style="
+  width: 627px;
+  height: 548px;
+  border:2px solid #fff;
+  object-fit: cover;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  border-radius:25px;
+">
 </div>
 </div>
 </div>
@@ -529,9 +540,9 @@ UK Standard Visitor Visa Application
 
 <p><h4>We are quick to respond to your messages,</h4></p>
 
-<button class="ig_btn">
+<a href="https://instagram.com/voyage.bureau?igshid=YmMyMTA2M2Y="><button class="ig_btn" >
   <img src="img/ig.png" alt="instagram">
-  </button>
+  </button></a>
 
 </div>
 </div>
@@ -555,7 +566,7 @@ UK Standard Visitor Visa Application
 <div class="review_part_text">
 <h2>Our Clients
 Love Our Work</h2>
-<p> <h4><q>Excellent agency, my partner and I will be forever grateful for what they've done for us. We both have PR now thanks to them. It would not have been possible without TIA's team of dedicated, detail-oriented people. Their communication is spot on too, we felt their kind support through our entire visa journey and it made all the difference.</q>
+<p> <h4><q>Excellent agency, my partner and I will be forever grateful for what they've done for us.It would not have been possible without TIA's team of dedicated, detail-oriented people. Their communication is spot on too, we felt their kind support through our entire visa journey and it made all the difference.</q>
    Thank you so much guys 
   </h4>
 </p>
@@ -626,11 +637,11 @@ Love Our Work</h2>
 
 <section class="contact_form">
   <div class="container_form">
-    <form>
+    <form onsubmit="sendEmail()">
         <ul>
             <li>
                 <label for="name"><span>Full Name <span class="required-star">*</span></span></label>
-                <input type="text" id="name" name="user_name" required>
+                <input type="text" id="full_name" name="user_name" required>
             </li>
             <li>
                 <label for="mail"><span>Email <span class="required-star">*</span></span></label>
@@ -638,18 +649,18 @@ Love Our Work</h2>
             </li>
             <li>
                 <label for="subject"><span>Visa Type<span class="required-star">*</span></span></label>
-                <input type="subject" name="visa_type" list="visa_type" required>
-                <datalist id="visa_type">
-                  <option value="Standard Visitor Visa"></option>
-                    <option value="Student Visa"></option>
-                    <option value="Graduate Route Visa"></option>
-                    <option value="Start-up Visa"></option>
-                    <option value="High Potential Visa"></option>
+                <input type="subject" name="visa_type" list="visa" id="input-visa" required>
+                <datalist id="visa">
+                  <option data-id="1" value="Standard Visitor Visa"></option>
+                    <option data-id="2"  value="Student Visa"></option>
+                    <option data-id="3" value="Graduate Route Visa"></option>
+                    <option data-id="4"  value="Start-up Visa"></option>
+                    <option data-id="5" value="High Potential Visa"></option>
               </datalist>
             </li>
             <li>
                 <label for="msg"><span>Your Query</span></label>
-                <textarea rows="4" cols="50" required></textarea>
+                <textarea rows="4" id="query" cols="50" required></textarea>
             </li>
             <li>
                 <input type="submit">
@@ -858,8 +869,7 @@ Love Our Work</h2>
 <div class="col-sm-8 col-md-4 col-lg-4">
 <div class="single_footer_part">
 <a href="#welcome" class="footer_logo_iner"> <img src="img/logo.jpeg" alt="#"> </a>
-<p>Gathered. Under is whose you'll to make years is mat lights thing together fish made
-forth thirds cattle behold won't. Fourth creeping first female.
+<p>Leave your stresses behind and come along for the ride
 </p>
 </div>
 </div>
@@ -899,10 +909,6 @@ forth thirds cattle behold won't. Fourth creeping first female.
 </div>
 </div>
 <div class="col-sm-4 col-md-3 col-lg-2">
-<div class="single_footer_part">
-<h4>Resources</h4>
-
-</div>
 </div>
 </div>
 <hr>
@@ -910,7 +916,7 @@ forth thirds cattle behold won't. Fourth creeping first female.
 <div class="col-lg-8">
 <div class="copyright_text">
 <P>
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Voyage Bureau</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is powered  <i class="ti-heart" aria-hidden="true"></i>by<a href="#" target="_blank">Voyage Bureau</a>
 </P>
 </div>
 </div>
@@ -966,11 +972,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"71d6e3a8fd877f08","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.6.0","si":100}' crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
-  
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <script src="./js/custom.js"></script>
 <script> 
-     
+     function sendEmail() {
+      var subjects =visa.options.namedItem( input-visa.value ).getAttribute('data-id');
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "kwesimensah20@gmail.com",
+            Password : "@1@2@3@4",
+            To : 'kwesimensah20@gmail.com',
+            From : document.getElementById('email').value,
+            Subject :  `Client Enquiry - ${subjects}`,
+            Body : `Client Full Name:${document.getElementById('full_name')}. <br>
+             <p><h4>${document.getElementById('query')} </h4></p>
+             
+             `
+        }).then(
+          message => alert(message)
+        );
+     }
 
 var stepper2 = new Stepper(document.querySelector('#stepper2'), {
     linear: true,
