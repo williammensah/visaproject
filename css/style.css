@@ -1902,7 +1902,7 @@ ul {
 
 /* line 44, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
 .main_menu .main-menu-item ul li .nav-link {
-  color: #ff4800;
+  color: #2c2a2a;
   font-size: 14px;
   padding: 40px 20px;
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -2189,11 +2189,11 @@ background: linear-gradient(to left, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Fi
 
 /* line 325, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
 .menu_fixed .main-menu-item ul li .nav-link {
-  color: #fff !important;
+  color: rgb(158, 150, 150) !important;
 }
 
 .menu_fixed .main-menu-item ul li .nav-link:hover{
-  color: #ff4800  !important;
+  color: #000  !important;
 }
 
 /* line 330, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_menu.scss */
