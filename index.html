@@ -958,21 +958,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="./js/custom.js"></script>
 <script> 
      function sendEmail() {
-      var subjects =visa.options.namedItem( input-visa.value ).getAttribute('data-id');
-            Email.send({
-            Host : "smtp.gmail.com",
-            Username : "kwesimensah20@gmail.com",
-            Password : "",
-            To : 'kwesimensah20@gmail.com',
-            From : document.getElementById('email').value,
-            Subject :  `Client Enquiry - ${subjects}`,
-            Body : `Client Full Name:${document.getElementById('full_name')}. <br>
-             <p><h4>${document.getElementById('query')} </h4></p>
+      // var subjects =visa.options.namedItem( input-visa.value ).getAttribute('data-id');
+      //       Email.send({
+      //       Host : "smtp.gmail.com",
+      //       Username : "kwesimensah20@gmail.com",
+      //       Password : "",
+      //       To : 'kwesimensah20@gmail.com',
+      //       From : document.getElementById('email').value,
+      //       Subject :  `Client Enquiry - ${subjects}`,
+      //       Body : `Client Full Name:${document.getElementById('full_name')}. <br>
+      //        <p><h4>${document.getElementById('query')} </h4></p>
              
-             `
-        }).then(
-          message => alert(message)
-        );
+      //        `
+      //   }).then(
+      //     message => alert(message)
+      //   );
      }
 
 var stepper2 = new Stepper(document.querySelector('#stepper2'), {
